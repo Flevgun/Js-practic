@@ -3,21 +3,21 @@ export function tabs() {
     info = document.querySelector(".info-header"),
     tabContent = document.querySelectorAll(".info-tabcontent");
 
-  function hideTabContent(hide) {
+  const hideTabContent = (hide) => {
     for (let i = hide; i < tabContent.length; i++) {
       tabContent[i].classList.remove("show");
       tabContent[i].classList.add("hide");
     }
-  }
+  };
 
   hideTabContent(1);
 
-  function showTabContent(show) {
+  const showTabContent = (show) => {
     if (tabContent[show].classList.contains("hide")) {
       tabContent[show].classList.remove("hide");
       tabContent[show].classList.add("show");
     }
-  }
+  };
 
   info.addEventListener("click", (event) => {
     const target = event.target;

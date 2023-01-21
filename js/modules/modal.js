@@ -1,8 +1,8 @@
 export function modal() {
-  const more = document.querySelector(".more");
-  const overlay = document.querySelector(".overlay");
-  const close = document.querySelector(".popup-close");
-  const descriptionBtn = document.getElementsByClassName("description-btn");
+  const more = document.querySelector(".more"),
+    overlay = document.querySelector(".overlay"),
+    close = document.querySelector(".popup-close"),
+    descriptionBtn = document.getElementsByClassName("description-btn");
 
   more.addEventListener("click", () => {
     overlay.style.display = "block";
